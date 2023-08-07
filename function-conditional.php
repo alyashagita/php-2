@@ -110,12 +110,23 @@ sama dengan 60 dan lebih kecil dari 70 maka akan mereturn string “Cukup” sel
 */
 
 // Code function di sini
+function tentukan_nilai($integer) {
+    if ($integer <= 100 && $integer >= 85) {
+        return "Sangat Baik<br>";
+    } elseif ($integer <= 85 && $integer >= 70) {
+        return "Baik<br>";
+    } elseif ($integer <= 70 && $integer >= 60) {
+        return "Cukup<br>";
+    } else {
+        return "Kurang<br>";
+    }
+}
 
 // Hapus komentar di bawah ini untuk jalankan code
-// echo tentukan_nilai(98); //Sangat Baik
-// echo tentukan_nilai(76); //Baik
-// echo tentukan_nilai(67); //Cukup
-// echo tentukan_nilai(43); //Kurang
+echo tentukan_nilai(98); //Sangat Baik
+echo tentukan_nilai(76); //Baik
+echo tentukan_nilai(67); //Cukup
+echo tentukan_nilai(43); //Kurang
 
 
 ?>
